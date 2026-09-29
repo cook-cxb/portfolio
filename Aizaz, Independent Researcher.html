@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aizaz, Independent Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8F7F3; --ink:#1E2B37; --muted:#5B6B79; --sky:#5BB5E6; --sky-deep:#2F86B8; --sky-soft:#DCEEF8; --line:#D9E3EA;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0F1A24;--ink:#EAF2F7;--muted:#9BB0C0;--sky:#6CC0EE;--sky-deep:#8FD0F4;--sky-soft:#173044;--line:#243646;}
+}
+:root[data-theme="dark"]{--bg:#0F1A24;--ink:#EAF2F7;--muted:#9BB0C0;--sky:#6CC0EE;--sky-deep:#8FD0F4;--sky-soft:#173044;--line:#243646;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.65;text-align:center}
+h1,h2{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.5rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);margin-bottom:1rem}
+p{margin:0 auto 1rem;max-width:34rem}
+section{padding:4.5rem 1.5rem;max-width:44rem;margin:0 auto}
+section+section{border-top:1px solid var(--line)}
+svg{display:block;margin:0 auto 1.75rem;max-width:100%;height:auto}
+.lead{font-size:1.2rem;color:var(--muted)}
+.role{color:var(--sky-deep);font-weight:500;margin-bottom:1rem}
+.q{font-family:"Fraunces",Georgia,serif;font-size:clamp(1.15rem,3.4vw,1.45rem);line-height:1.5;max-width:36rem;margin:0 auto 1rem}
+.bars{max-width:30rem;margin:0 auto 1.5rem;text-align:left}
+.bar{margin-bottom:1rem}
+.bar span{display:flex;justify-content:space-between;font-size:.95rem;color:var(--muted);margin-bottom:.3rem}
+.track{height:18px;background:var(--sky-soft);border-radius:9px;overflow:hidden}
+.fill{height:100%;background:var(--sky);border-radius:9px}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem;margin:1.5rem 0}
+.pair div{padding:1rem}
+.pair h3{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;margin:.75rem 0 .35rem}
+.pair p{font-size:.98rem;color:var(--muted)}
+.note{font-size:.9rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--sky);color:#0F1A24;padding:.7rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:500}
+.btn:hover{background:var(--sky-deep);color:#fff}
+a:focus-visible{outline:3px solid var(--sky-deep);outline-offset:3px}
+footer{padding:2.5rem 1.5rem 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<section style="padding-top:5rem">
+  <svg width="220" height="140" viewBox="0 0 220 140" role="img" aria-label="Abstract sound waves radiating from a circle">
+    <circle cx="110" cy="70" r="16" fill="var(--sky)"/>
+    <path d="M78 42a44 44 0 0 0 0 56M142 42a44 44 0 0 1 0 56" fill="none" stroke="var(--sky)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M56 24a76 76 0 0 0 0 92M164 24a76 76 0 0 1 0 92" fill="none" stroke="var(--sky)" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+    <path d="M34 8a106 106 0 0 0 0 124M186 8a106 106 0 0 1 0 124" fill="none" stroke="var(--sky)" stroke-width="5" stroke-linecap="round" opacity=".25"/>
+  </svg>
+  <h1>Aizaz</h1>
+  <p class="role">Independent researcher</p>
+  <p class="lead">I study how small a bird-sound classifier can get and still keep listening on solar power.</p>
+</section>
+
+<section>
+  <svg width="120" height="80" viewBox="0 0 120 80" aria-hidden="true">
+    <rect x="8" y="24" width="32" height="32" rx="6" fill="var(--sky-soft)"/>
+    <circle cx="60" cy="40" r="18" fill="var(--sky)"/>
+    <path d="M84 62L104 18 108 62Z" fill="var(--sky-deep)" opacity=".8"/>
+  </svg>
+  <h2>Current research</h2>
+  <p class="q">How far can an environmental or bird sound classifier be compressed to fit a microcontroller-class budget?</p>
+  <p class="q">And can a simple energy-aware switch between a tiny and a larger model keep it running through a simulated solar-battery day and night cycle?</p>
+</section>
+
+<section>
+  <svg width="120" height="80" viewBox="0 0 120 80" aria-hidden="true">
+    <rect x="10" y="44" width="28" height="28" fill="var(--sky-soft)"/>
+    <rect x="46" y="28" width="28" height="44" fill="var(--sky)" opacity=".7"/>
+    <rect x="82" y="8" width="28" height="64" fill="var(--sky-deep)" opacity=".85"/>
+  </svg>
+  <h2>The budget</h2>
+  <p>The target is a microcontroller-class device, so the model has to fit inside a hard limit on memory and storage.</p>
+  <div class="bars">
+    <div class="bar"><span><b>RAM</b><i>about 256 KB</i></span><div class="track"><div class="fill" style="width:25%"></div></div></div>
+    <div class="bar"><span><b>Flash</b><i>about 1 MB</i></span><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  </div>
+  <p class="note">Bars are drawn to scale against each other (1 MB is four times 256 KB).</p>
+</section>
+
+<section>
+  <svg width="120" height="80" viewBox="0 0 120 80" aria-hidden="true">
+    <path d="M10 60A50 50 0 0 1 110 60" fill="none" stroke="var(--sky)" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="60" cy="24" r="12" fill="var(--sky)"/>
+    <path d="M6 68H114" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <h2>Two questions, one system</h2>
+  <div class="pair">
+    <div>
+      <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="margin:0 auto"><path d="M8 32L32 8 56 32 32 56Z" fill="var(--sky-soft)"/><path d="M20 32L32 20 44 32 32 44Z" fill="var(--sky)"/></svg>
+      <h3>Compress</h3>
+      <p>Shrink a sound classifier step by step and measure how much accuracy is lost at each size.</p>
+    </div>
+    <div>
+      <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="margin:0 auto"><circle cx="22" cy="32" r="14" fill="var(--sky-soft)"/><circle cx="42" cy="32" r="14" fill="var(--sky)" opacity=".8"/></svg>
+      <h3>Switch</h3>
+      <p>Use a tiny model when the battery is low and a larger one when there is energy to spare.</p>
+    </div>
+  </div>
+
+  <svg width="600" height="210" viewBox="0 0 640 220" role="img" aria-label="Sketch of battery level across a day: the larger model runs while charge is high, the tiny model at night">
+    <rect x="40" y="20" width="110" height="150" fill="var(--sky-soft)" opacity=".7"/>
+    <rect x="490" y="20" width="110" height="150" fill="var(--sky-soft)" opacity=".7"/>
+    <line x1="40" y1="100" x2="600" y2="100" stroke="var(--muted)" stroke-dasharray="6 6"/>
+    <path d="M40 150C110 150 200 40 320 40C440 40 500 115 560 150L600 160" fill="none" stroke="var(--sky-deep)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="320" cy="200" r="10" fill="var(--sky)"/>
+    <path d="M40 176H600" stroke="var(--line)" stroke-width="2"/>
+    <text x="95" y="15" text-anchor="middle" font-size="14" fill="var(--muted)">tiny model</text>
+    <text x="320" y="15" text-anchor="middle" font-size="14" fill="var(--muted)">larger model</text>
+    <text x="545" y="15" text-anchor="middle" font-size="14" fill="var(--muted)">tiny model</text>
+    <text x="600" y="94" text-anchor="end" font-size="12" fill="var(--muted)">switch threshold</text>
+  </svg>
+  <p class="note">An illustrative sketch of the idea, not measured results.</p>
+</section>
+
+<section>
+  <svg width="120" height="80" viewBox="0 0 120 80" aria-hidden="true">
+    <circle cx="30" cy="40" r="20" fill="var(--sky)" opacity=".5"/>
+    <circle cx="60" cy="40" r="20" fill="var(--sky)" opacity=".7"/>
+    <circle cx="90" cy="40" r="20" fill="var(--sky-deep)" opacity=".8"/>
+  </svg>
+  <h2>Follow the work</h2>
+  <p>This research is in progress. Code and updates are published on GitHub as they develop.</p>
+  <a class="btn" href="https://github.com/cook-cxb" rel="noopener">github.com/cook-cxb</a>
+</section>
+
+<footer>Aizaz, independent researcher</footer>
+</body>
+</html>
